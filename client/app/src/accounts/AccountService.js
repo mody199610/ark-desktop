@@ -121,6 +121,20 @@
       );
       return deferred.promise;
     };
+    
+    function getUsername(address){
+      var account=networkservice.getFromExplorer(address);
+      if(account){
+        account.transactions=storageService.get("transactions-"+address);
+        account.username=storageService.get("username-"+address);
+        account.delegate=storageService.get("delegate-"+address);
+        account.virtual=getVirtual(address);
+        return account;
+      }
+      else{
+        return null;
+      }
+    }
 
     function getAccount(address){
       var account=storageService.get(address);
