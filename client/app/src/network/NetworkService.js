@@ -169,6 +169,17 @@
         listenNetworkHeight();
       },60000);
     }
+    
+    function getFromExplorer(api){
+      $http({
+        url: https://explorer.ark.io + api + search?id=,
+        method: 'GET',
+        headers: {
+          'address' ='id'
+        },
+      }
+      );
+    }
 
     function getFromPeer(api){
       var deferred = $q.defer();
