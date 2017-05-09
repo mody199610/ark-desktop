@@ -124,12 +124,12 @@
     
     function getUsername(address){
       var account=networkservice.getFromExplorer(address);
-      if(account){
-        account.transactions=storageService.get("transactions-"+address);
-        account.username=storageService.get("username-"+address);
-        account.delegate=storageService.get("delegate-"+address);
-        account.virtual=getVirtual(address);
-        return account;
+      if(address){
+        address.transactions=storageService.get("transactions-"+address);
+        address.username=storageService.get("username-"+address);
+        address.delegate=storageService.get("delegate-"+address);
+        address.virtual=getVirtual(address);
+        return address;
       }
       else{
         return null;
