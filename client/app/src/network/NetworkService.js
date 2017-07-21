@@ -80,17 +80,17 @@
       if(!n){
         n = {
           mainnet:{ //so far same as testnet
-            nethash:'6e84d08bd299ed97c212c886c98a57e36545c8f5d645ca7eeae63a8bd62d8988',
-            peerseed:'http://5.39.9.240:4001',
-            forcepeer: false,
-            token: 'ARK',
-            symbol: 'Ѧ',
+            nethash:'cd8171332c012514864edd8eb6f68fc3ea6cb2afbaf21c56e12751022684cea5',
+            peerseed:'http://13.64.199.54:5555',
+            forcepeer: true,
+            token: 'RISE',
+            symbol: ' R',
             version: 0x17,
-            explorer: 'https://explorer.ark.io',
+            explorer: 'https://explorer.rise.vision',
             exchanges: {
-              changer: "ark_ARK"
+              //changer: "ark_ARK"
             },
-            background:"url(assets/images/Ark.jpg)"
+            //background:"url(assets/images/Ark.jpg)"
           },
           devnet:{
             nethash:'578e820911f24e039733b45e4882b73e301f813a0d2c31330dafda84534ffa23',
