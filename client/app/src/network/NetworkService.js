@@ -12,7 +12,7 @@
 
     var network=switchNetwork(storageService.getContext());
 
-    var ark = require('arkjs');
+    var ark = require('risejs');
     ark.crypto.setNetworkVersion(network.version);
 
     var clientVersion = require('../../package.json').version;
